@@ -16,8 +16,14 @@ Prepare the FMU processor to upgrade the IO processor firmware:
 
 With the Pixhawk powered off, hold down the mrming switch. Power the Pixhawk
 on (via USB or otherwise) while still holding the arming switch. The amber
-LED on the IO side marked B/E should blink rapidly. The Pixhawk firmware should
-detect that the PX4IO is in bootloader mode upgrade the PX4IO firmware.
+LED on the IO side marked B/E should blink rapidly, and remain blinking
+rapidly for longer than the B/E light on the FMU side does. After the FMU B/E
+light goes off, the APM Pixhawk firmware should detect that the PX4IO is in
+bootloader mode upgrade the PX4IO firmware, and set the PX4FMU's tri-color LED
+to solid white.
+
+When the firmware upgrade is complete, the IO ACT blue led will blink slowly,
+and the FMU tri-color LED will start blinking in various different colors.
 
 # Confirming firmware upgrade was successful
 
