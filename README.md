@@ -5,7 +5,7 @@ ordinary Pixhawk-based flight platform, such as the Iris or Iris+ quadcopters
 sold by 3D Robotics, into a SMACCMPilot compatible platform.
 
 
-## Steo 0: Flashing the PX4 project Bootloader
+## Step 0: Flashing the PX4 project Bootloader
 
 If you haven't ever used JTAG or don't even know what that means, skip this
 step.
@@ -22,18 +22,22 @@ in order to perform an upgrade of the firmware on the IO coprocessor.
 Follow the steps in `fmu_apm_firmware/` to load the included APM project
 firmware image onto the FMU.
 
-# Step 2: Upgrade the IO coprocessor firmware
+## Step 2: Upgrade the IO coprocessor firmware
 
 A new firmware image for the px4io IO coprocessor is provided in the `sdcard`
 directory. It must be copied onto a Micro SD card. Follow the instructions in
 the `sdcard` directory to complete this operation.
 
-# Step 3: Upgrade each 3DR Radio's firmware
+## Step 3: Upgrade each 3DR Radio's firmware
 
 SMACCMPilot uses a upgraded version of the 3DR Radio firmware which fixes
 several serious security vulerabilities in the factory firmware, and provides a
 more reliable framing mechanism. Follow the instructions provided in the
 `smaccm_sik/` directory With each 3DR Radio (or compatible HM-TRP based radio).
+
+## Step 4: RC Transmitter Configuration
+
+TODO.
 
 ## Questions
 
