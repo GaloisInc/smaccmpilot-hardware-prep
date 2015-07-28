@@ -1,9 +1,8 @@
-# SMACCMPilot Platform Prep
+# SMACCMPilot Hardware Platform Preparation
 
 This repository contains a set of utility programs required to transform an
 ordinary Pixhawk-based flight platform, such as the Iris or Iris+ quadcopters
 sold by 3D Robotics, into a SMACCMPilot compatible platform.
-
 
 ## Step 0: Flashing the PX4 project Bootloader
 
@@ -24,9 +23,13 @@ firmware image onto the FMU.
 
 ## Step 2: Upgrade the IO coprocessor firmware
 
-A new firmware image for the px4io IO coprocessor is provided in the `sdcard`
-directory. It must be copied onto a Micro SD card. Follow the instructions in
-the `sdcard` directory to complete this operation.
+A new firmware image for the px4io IO coprocessor must be copied to a Micro SD
+card so the APM firmware can read the image and load it.
+
+Follow instructions the `sdcard/` directory to complete these operations.
+
+After Step 2 is complete, you can overwrite the APM firmware with the ordinary
+smaccm-flight standalone flight firmware.
 
 ## Step 3: Upgrade each 3DR Radio's firmware
 
@@ -37,7 +40,10 @@ more reliable framing mechanism. Follow the instructions provided in the
 
 ## Step 4: RC Transmitter Configuration
 
-TODO.
+[See external instructions on the SMACCMPilot website for required RC
+Transmitter configuration][rc].
+
+[rc]: http://smaccmpilot.org/hardware/rc-controller.html
 
 ## Questions
 
