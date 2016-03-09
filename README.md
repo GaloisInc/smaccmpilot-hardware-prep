@@ -44,7 +44,3 @@ more reliable framing mechanism. Follow the instructions provided in the
 Transmitter configuration][rc].
 
 [rc]: http://smaccmpilot.org/hardware/rc-controller.html
-
-## Questions
-
-Contact pat@galois.com
